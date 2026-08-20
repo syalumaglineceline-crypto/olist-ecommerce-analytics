@@ -37,13 +37,13 @@ Dataset by Olist") and place the nine CSV files in `data/raw/`.
 
 ## How to run
 
-```bash
+bash
 pip install -r requirements.txt
 python src/build_db.py       # load and clean into data/olist.db
 python sql/run_sql.py        # print the business question results
 python src/analysis.py       # cohorts, RFM, delivery, and the figures
 streamlit run dashboard/app.py
-```
+
 
 ## What I found
 
@@ -84,13 +84,14 @@ chart is in `reports/figures/rfm_segments.png`.
 
 ## Project layout
 
-```
+
 data/raw/        the nine Olist CSVs (not committed, download from Kaggle)
 src/build_db.py  load and clean into SQLite
 src/analysis.py  cohorts, RFM, delivery analysis, figures
 sql/             business questions and a runner
 dashboard/app.py Streamlit dashboard
 reports/figures  generated charts
-```
+
 
 ## Tools
+Python (pandas, numpy, matplotlib, plotly), SQL (SQLite), and Streamlit.
